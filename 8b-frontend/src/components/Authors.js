@@ -1,3 +1,5 @@
+import AuthorForm from "./AuthorForm";
+
 const Authors = (props) => {
   if (!props.show || !props.authors) {
     return null
@@ -25,7 +27,10 @@ const Authors = (props) => {
           ))}
         </tbody>
       </table>
+      
+      <AuthorForm />
     </div>
+
   )
 }
 
