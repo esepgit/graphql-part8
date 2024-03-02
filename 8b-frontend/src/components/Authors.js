@@ -6,7 +6,6 @@ const Authors = (props) => {
   }
   
   const authors = props.authors.allAuthors
-  console.log(authors);
 
   return (
     <div>
@@ -27,8 +26,8 @@ const Authors = (props) => {
           ))}
         </tbody>
       </table>
-      
-      <AuthorForm />
+
+      <AuthorForm authors={authors} />
     </div>
 
   )
